@@ -7,10 +7,10 @@ ETHER_NETWORK = "homestead"<br>
 ETHER_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxx"
 
 
-#Start the service
+# Start the service
 `npm start` or `npm run dev`
 
-#For testing
+# For testing
 `npm test`
 
 
