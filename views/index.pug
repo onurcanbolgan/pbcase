@@ -1,0 +1,39 @@
+html
+  head
+  body
+    h1#etherium-get-balance-api Etherium get balance API
+    h1#configuration Configuration
+    p Create .env file and fill with your API key and Ether network(etherscan.io)
+    p
+      | ETHER_NETWORK = &ldquo;homestead&rdquo;
+      br
+      |  ETHER_API_KEY = &ldquo;xxxxxxxxxxxxxxxxxxxxxxxx&rdquo;
+    p
+      | #Start the service 
+      code npm start
+      |  or 
+      code npm run dev
+    p
+      | #For testing 
+      code npm test
+    h1#getbalance getBalance
+    table
+      colgroup
+        col(style='width: 21%')
+        col(style='width: 3%')
+        col(style='width: 3%')
+        col(style='width: 71%')
+      thead
+        tr.header
+          th Route
+          th HTTP Verb
+          th POST body
+          th Description
+      tbody
+        tr.odd
+          td /api/getBalance
+          td
+            code POST
+          td
+            | [&ldquo;0x3ad166A56aed667b1332d16c617d17929Dc7AF93&rdquo;,&ldquo;0x4e4a47cAC6A28A62dcC20990ed2cdA9BC659469F&rdquo;,&ldquo;0xb66487e15e60134f6b39937d3f122e3c472f9e20&rdquo;,&ldquo;0xdac17f958d2ee523a2206206994597c13d831ec7&rdquo;,&ldquo;sefwmfwope&rdquo;,&ldquo;0x930fb1A219CE5AC4A5078826a1be0F8aDfe98c19&rdquo;,&ldquo;0x930fb1A219CE5AC4A5078t26a1be0F8aDfe98c19&rdquo;]
+          td Check all addresses and get balance if address is valid
